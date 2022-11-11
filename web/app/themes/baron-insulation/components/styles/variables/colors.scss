@@ -1,0 +1,21 @@
+$theme: #BA202A;
+
+$black: #707070;
+
+$gray: #E5E9EC;
+$gray-light: #F5F5F5;
+$gray-dark: #BFBFBF;
+
+.color {
+    &-theme {
+        color: $theme  !important;
+    }
+
+    &-white {
+        color: #fff !important;
+    }
+
+    &-black {
+        color: $black  !important;
+    }
+}

@@ -1,0 +1,34 @@
+.news-cont {
+    &__header {
+        margin-bottom: 70px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        &-media {
+            flex: 0 0 410px;
+            height: 260px;
+
+            img {
+                display: block;
+                @include imgfit;
+            }
+        }
+
+        &-text {
+            padding-left: 42px;
+        }
+
+        &-title {
+            color: $theme;
+            margin-bottom: 15px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72.504" height="72.724" viewBox="0 0 72.504 72.724">
+  <g id="architectural_project-plan_blueprint-safety_helmet" data-name="architectural project-plan/blueprint-safety helmet" transform="translate(-66.75 -114.75)">
+    <g id="Group_75756" data-name="Group 75756" transform="translate(68 160.035)">
+      <path id="Path_2950" data-name="Path 2950" d="M74.5,164.238S123.326,155,128.971,155C138,156.129,138,170.807,138,170.807l-49.68,10.162c0-12.42-9.033-16.937-12.014-16.937-4.571,0-8.31,3.455-8.31,9.033,0,4.462,2.971,7.9,6.628,7.9,2.924,0,5.786-1.9,5.786-5.47a5.128,5.128,0,0,0-4.839-5.049l8.233-1.9" transform="translate(-68 -155)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_2951" data-name="Path 2951" d="M90,165.646c2.258,1.129,3.116,4.56,3.387,5.645l35-6.775A6.994,6.994,0,0,0,126.131,160" transform="translate(-65.16 -154.355)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <line id="Line_15" data-name="Line 15" y1="3.252" x2="12.631" transform="translate(7.465 22.665)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    </g>
+    <g id="Group_75757" data-name="Group 75757" transform="translate(68 116)">
+      <path id="Path_2952" data-name="Path 2952" d="M69.129,160.807A8.127,8.127,0,0,1,68,156.291L79.291,145" transform="translate(-68 -112.256)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_2953" data-name="Path 2953" d="M107.357,116c28.227,0,28.227,31.615,28.227,31.615h-6.775L116.389,151l-4.516,4.516c-12.42,2.258-27.1,2.258-33.873-3.387v-6.775s0-13.549,9.033-19.195" transform="translate(-66.709 -116)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_2954" data-name="Path 2954" d="M126.988,125.033c-4.807-2.7-10.944-3.2-16.53-2.849A19.746,19.746,0,0,0,92.5,137.471h0a2.259,2.259,0,0,1-2.748,1.682l-4.684-1.171a2.258,2.258,0,0,1-1.661-2.664l.668-3.119a20.157,20.157,0,0,1,17.176-15.885,45.6,45.6,0,0,1,5.41-.315" transform="translate(-66.017 -116)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_2955" data-name="Path 2955" d="M120.84,128S98.258,126.872,96,148.325" transform="translate(-64.385 -114.452)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_2956" data-name="Path 2956" d="M126,144s1.129,3.811,0,6.775" transform="translate(-60.512 -112.385)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    </g>
+  </g>
+</svg>

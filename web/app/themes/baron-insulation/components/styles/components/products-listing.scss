@@ -1,0 +1,22 @@
+.prod {
+    &__header {
+        margin-bottom: 55px;
+    }
+
+    &__row {
+        flex-wrap: nowrap;
+    }
+
+    &__col {
+        min-width: 1px;
+
+        &--side {
+            flex: 0 0 230px;
+        }
+
+        &--main {
+            flex: auto;
+            padding-left: 25px;
+        }
+    }
+}

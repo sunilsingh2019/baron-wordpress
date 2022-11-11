@@ -1,0 +1,92 @@
+.btn {
+    color: #fff;
+    background-color: $theme;
+    border: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease-out;
+
+    &:hover {
+        color: $theme;
+        background-color: $gray;
+        text-decoration: none;
+    }
+
+    &-hover-black {
+        &:hover {
+            color: #fff;
+            background-color: $black;
+        }
+    }
+
+    &-arrow {
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        background-color: #fff;
+        border: 2px solid $theme;
+        border-radius: 50%;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-45%, -45%);
+            width: 15px;
+            height: 15px;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5LjUyOSIgaGVpZ2h0PSIxNi4yMjkiIHZpZXdCb3g9IjAgMCA5LjUyOSAxNi4yMjkiPg0KICA8cGF0aCBpZD0iUGF0aF8yOTAwIiBkYXRhLW5hbWU9IlBhdGggMjkwMCIgZD0iTTQ1OCwxMzAwbDcuNDA4LDcuNDA3TDQ1OCwxMzE0LjgxNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ1Ny4yOTMgLTEyOTkuMjkzKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmEyMDJhIiBzdHJva2Utd2lkdGg9IjIiLz4NCjwvc3ZnPg0K");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: all .3s ease-out;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        &:hover {
+            background-color: $theme;
+
+            &::after {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+
+    &-trans {
+        font-weight: 400;
+        color: $theme;
+        background-color: #fff;
+        border: 1px solid $theme;
+
+        &:hover {
+            border-color: transparent;
+        }
+
+        &-black {
+            color: $black;
+            border-color: $black;
+        }
+    }
+
+    &-gray-dark {
+        color: #fff;
+        background-color: $gray-dark;
+
+        &:hover {
+            color: #fff;
+            background-color: $theme;
+        }
+    }
+}

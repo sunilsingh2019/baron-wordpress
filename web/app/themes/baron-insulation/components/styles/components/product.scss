@@ -1,0 +1,38 @@
+.product {
+    &__row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    &__col {
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-bottom: 45px;
+    }
+
+    &__card {
+        &-media {
+            box-shadow: 0 -10px 15px rgba(#000, .06);
+
+            img {
+                @include imgfit;
+            }
+        }
+
+        &-text {
+            margin-top: 15px;
+        }
+
+        &-title {
+            color: $theme;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        p {
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+}

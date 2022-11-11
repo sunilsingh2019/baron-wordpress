@@ -1,0 +1,69 @@
+.product {
+    &__filter {
+        padding: 20px 0 50px;
+        background-color: $gray-light;
+        border-radius: 5px;
+
+        &-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: $theme;
+            padding: 0 20px;
+            margin-bottom: 10px;
+        }
+
+        &-items {
+            margin-bottom: 20px;
+        }
+
+        &-checkbox {
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+
+            input {
+                display: none;
+            }
+
+            label {
+                position: relative;
+                display: flex;
+                align-items: center;
+                font-size: 15px;
+                text-transform: capitalize;
+                height: 35px;
+                padding: 8px 20px;
+                padding-right: 45px;
+                @include unselect;
+                cursor: pointer;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 20px;
+                    height: 20px;
+                    background-color: #fff;
+                    border: 1px solid $black;
+                    border-radius: 4px;
+                    background-size: 12px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            input:checked+label {
+                color: #fff;
+                background-color: rgba($theme, .2);
+
+                &::after {
+                    background-color: $theme;
+                    border-color: $theme;
+                    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMy4xOTMiIGhlaWdodD0iOS41MTIiIHZpZXdCb3g9IjAgMCAxMy4xOTMgOS41MTIiPg0KICA8cGF0aCBpZD0iQ2hlY2siIGQ9Ik0zMDIuNDUzLDIzOC4zbDMuNzg2LDMuODg4LDcuOTkyLTguMDkxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzAxLjc0NiAtMjMzLjM5KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjNlYmZlIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMSIvPg0KPC9zdmc+DQo=");
+                }
+            }
+        }
+    }
+}

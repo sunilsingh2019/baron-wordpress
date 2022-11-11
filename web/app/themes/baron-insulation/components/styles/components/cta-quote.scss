@@ -1,0 +1,21 @@
+.cta-quote {
+
+    &__title {
+        font-size: 36px;
+        line-height: 49px;
+        margin-bottom: 32px;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .btn {
+        font-weight: 400;
+    }
+
+    &-img {
+        height: 355px;
+        overflow: hidden;
+    }
+}

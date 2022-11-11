@@ -1,0 +1,96 @@
+.hmbanner {
+    padding: 0;
+
+    >.container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    &__slider {
+        .slick {
+            &-arrow {}
+
+            &-prev,
+            &-next {
+                z-index: 1;
+                width: 40px;
+                height: 40px;
+
+                @media (max-width: 991px) {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                &::before {
+                    display: none;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            &-prev {
+                left: 5%;
+
+                &::after {
+                    content: "";
+                    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iI0ZGRkZGRiI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIiBvcGFjaXR5PSIuODciLz48cGF0aCBkPSJNMTcuNTEgMy44N0wxNS43MyAyLjEgNS44NCAxMmw5LjkgOS45IDEuNzctMS43N0w5LjM4IDEybDguMTMtOC4xM3oiLz48L3N2Zz4=")
+                }
+            }
+
+            &-next {
+                right: 5%;
+
+                &::after {
+                    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIGZpbGw9IiNGRkZGRkYiPjxnPjxwYXRoIGQ9Ik0wLDBoMjR2MjRIMFYweiIgZmlsbD0ibm9uZSIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjYuMjMsMjAuMjMgOCwyMiAxOCwxMiA4LDIgNi4yMywzLjc3IDE0LjQ2LDEyIi8+PC9nPjwvc3ZnPg==")
+                }
+            }
+        }
+    }
+
+    &__card {
+
+        &-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include imgfit;
+        }
+
+        &-text {
+            z-index: 1;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
+            text-align: center;
+            min-height: 442px;
+
+            @media (max-width: 991px) {
+                padding-top: 70px;
+                min-height: 320px;
+                justify-content: flex-start;
+            }
+        }
+
+        &-title {
+            color: #fff;
+            font-size: 44px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0;
+
+            @media (max-width: 991px) {
+                font-size: 32px;
+            }
+        }
+    }
+}

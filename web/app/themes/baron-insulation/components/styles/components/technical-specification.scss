@@ -1,0 +1,68 @@
+.techspec {
+    padding: 54px 0 76px;
+
+    &__header {
+        max-width: 930px;
+        @include margin-auto;
+        margin-bottom: 30px;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__row {
+        margin-left: -11px;
+        margin-right: -11px;
+    }
+
+    &__col {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+    &__card {
+        position: relative;
+        height: 100%;
+        padding: 22px 20px 20px 24px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 -10px 15px rgba(#000, .06);
+        transition: all .3s ease-out;
+
+        &-icon {
+            height: 42px;
+            margin-bottom: 8px;
+        }
+
+        &-title {
+            min-height: 64px;
+            color: $theme;
+            text-transform: capitalize;
+            line-height: 107.692%;
+            margin-bottom: 8px;
+        }
+
+        .btn-arrow {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 32px;
+            height: 32px;
+        }
+
+        p {
+            padding-right: 32px;
+        }
+
+        &:hover {
+            border-color: $theme;
+            transform: translateY(-6px);
+        }
+    }
+}

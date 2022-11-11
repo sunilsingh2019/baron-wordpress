@@ -1,0 +1,97 @@
+{
+  "name": "roots/baron",
+  "type": "project",
+  "license": "MIT",
+  "description": "Established in 1973, Baron Insulation continues to provide peace of mind and tailored solutions to our industry partners through the supply of insulation materials. ",
+  "homepage": "https://www.baroninsulation.com.au/",
+  "authors": [
+    {
+      "name": "Scott Walkinshaw",
+      "email": "scott.walkinshaw@gmail.com",
+      "homepage": "https://github.com/swalkinshaw"
+    },
+    {
+      "name": "Ben Word",
+      "email": "ben@benword.com",
+      "homepage": "https://github.com/retlehs"
+    }
+  ],
+  "keywords": [
+    "baron", "composer", "roots", "wordpress", "wp", "wp-config"
+  ],
+  "support": {
+    "issues": "https://wordpress.org/support/",
+    "forum": "https://wordpress.org/support/forums/"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "6.0.4",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/v2/plugins/download?p=pro&k=ACF_PRO_KEY"
+        }
+        
+      }
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "composer/installers": "^2.2",
+    "vlucas/phpdotenv": "^5.4",
+    "oscarotero/env": "^2.1",
+    "roots/bedrock-autoloader": "^1.0",
+    "roots/bedrock-disallow-indexing": "^2.0",
+    "roots/wordpress": "^6.1",
+    "roots/wp-config": "1.0.0",
+    "roots/wp-password-bcrypt": "1.1.0",
+    "wpackagist-theme/twentytwentytwo": "^1.2",
+    "pivvenit/acf-pro-installer": "^3.2",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^6.0.4",
+    "wpackagist-plugin/duplicate-post": "4.5",
+    "wpackagist-plugin/contact-form-7": "^5.6",
+    "wp-cli/wp-cli": "^2.7",
+    "wp-cli/core-command": "^2.1",
+    "roots/wordpress-core-installer": "^1.100"
+
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7.1",
+    "roave/security-advisories": "dev-latest"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "composer/installers": true,
+      "roots/wordpress-core-installer": true,
+      "pivvenit/acf-pro-installer": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ],
+    "test": [
+      "phpcs"
+    ]
+  }
+}

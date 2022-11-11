@@ -1,0 +1,69 @@
+.hmprod {
+    padding: 40px 0 110px;
+
+    &__row {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    &__col {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 15px;
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 32px;
+        padding: 0 34px;
+    }
+
+    &__title {
+        color: $theme;
+        margin-bottom: 10px;
+    }
+
+    &__col {
+        @media (min-width: 1025px) {
+            flex: 0 0 20%;
+        }
+    }
+
+    &__card {
+        display: block;
+        border-radius: 5px;
+        overflow: hidden;
+        border: 2px solid transparent;
+        background-color: $gray;
+        box-shadow: 0 3px 6px rgba(#000, .16);
+        transition: all .3s ease-out;
+
+        &-img {
+            height: 150px;
+
+            img {
+                display: block;
+                @include imgfit;
+            }
+        }
+
+        &-text {
+            text-align: center;
+            padding: 20px 0 24px;
+        }
+
+        &-title {
+            color: $theme;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            transform: translateY(-6px);
+            border-color: $theme;
+            box-shadow: 0 0 15px rgba($theme, .35);
+        }
+    }
+}

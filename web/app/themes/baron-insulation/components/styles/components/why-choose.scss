@@ -1,0 +1,35 @@
+.whychoose {
+    padding: 44px 0 52px;
+
+    &__row {
+        align-items: center;
+    }
+
+    &__media {
+        margin-top: -64px;
+
+        img {
+            @include imgfit;
+        }
+    }
+
+    &__text {
+        max-width: 460px;
+
+        @media (min-width: 992px) {
+            text-align: right;
+            margin-left: auto;
+        }
+    }
+
+    @media (min-width: 992px) {
+        &__col + &__col &__text {
+            text-align: left;
+            margin-left: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+}

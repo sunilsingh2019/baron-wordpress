@@ -1,0 +1,76 @@
+.indexpert {
+    padding: 77px 0 90px;
+
+    &__row {
+        margin-left: -8px;
+        margin-right: -8px;
+        margin-bottom: -16px;
+    }
+
+    &__col {
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 16px;
+    }
+
+    &__card {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        border: 5px solid $gray;
+        border-radius: 4px 4px 0 0;
+        transition: all .3s ease-out;
+
+        &-media {
+            height: 169px;
+
+            img {
+                display: block;
+                @include imgfit;
+            }
+        }
+
+        &-text {
+            position: relative;
+            flex: auto;
+            padding: 12px 18px 66px 24px;
+        }
+
+        &-title {
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: 300;
+            margin-bottom: 0;
+        }
+
+        .btn-arrow {
+            position: absolute;
+            bottom: 20px;
+            left: 24px;
+            width: 32px;
+            height: 32px;
+            margin-top: 18px;
+        }
+
+        &:hover {
+            border-color: $gray-dark;
+
+            .btn-arrow {
+                background-color: $theme;
+
+                &::after {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+    }
+
+    &__footer {
+        margin-top: 30px;
+    }
+}

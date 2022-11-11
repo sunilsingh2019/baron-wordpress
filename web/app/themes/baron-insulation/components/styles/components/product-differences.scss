@@ -1,0 +1,32 @@
+.prod-diff {
+    &__title {
+        @media(min-width: 992px) {
+            line-height: 37px;
+        }
+    }
+
+    &__card {
+        display: flex;
+        margin-bottom: 17px;
+
+        &-media {
+            flex: 0 0 200px;
+            height: 126px;
+            border: 1px solid $black;
+            border-radius: 5px;
+
+            img {
+                display: block;
+                @include imgfit;
+            }
+        }
+
+        &-text {
+            padding-left: 27px;
+
+            p u {
+                font-weight: 600;
+            }
+        }
+    }
+}
